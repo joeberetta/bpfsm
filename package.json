@@ -6,10 +6,7 @@
     "types": "dist/index.d.ts",
     "homepage": "https://github.com/joeberetta/bpfsm",
     "bugs": "https://github.com/joeberetta/bpfsm/issues",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/joeberetta/bpfsm.git"
-    },
+    "repository": "https://github.com/joeberetta/bpfsm.git",
     "engines": {
         "npm": ">=7.0.0",
         "node": ">=14.15.0"
