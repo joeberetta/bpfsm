@@ -1,0 +1,49 @@
+{
+    "name": "bpfsm",
+    "version": "1.0.0",
+    "description": "Tiny business processess to FSM library",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "homepage": "https://github.com/joeberetta/bpfsm",
+    "bugs": "https://github.com/joeberetta/bpfsm/issues",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joeberetta/bpfsm.git"
+    },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=14.15.0"
+    },
+    "scripts": {
+        "test": "jest -c ./jest-config.js",
+        "prepublish": "yarn build && yarn test && tsc",
+        "prebuild": "yarn format",
+        "build": "tsc",
+        "format": "prettier src --write"
+    },
+    "keywords": [],
+    "author": {
+        "email": "shakhrukh.97@gmail.com",
+        "name": "Joe Beretta",
+        "url": "https://t.me/joeberetta"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "rxjs": "^7.8.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.1",
+        "@types/node": "^20.1.2",
+        "jest": "^29.5.0",
+        "prettier": "^2.8.8",
+        "ts-jest": "^29.1.0",
+        "typescript": "^5.0.4",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/commit-analyzer": "^9.0.2",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^8.0.4",
+        "@semantic-release/npm": "^9.0.1",
+        "@semantic-release/release-notes-generator": "^10.0.3",
+        "semantic-release": "^19.0.2"
+    }
+}
